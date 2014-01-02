@@ -60,9 +60,11 @@ package
 			
 			iconMenu.addItem(settingsCommand);
 			settingsCommand.addEventListener(Event.SELECT, settingsHandler);
+			settingsCommand.enabled = false;
 			
 			iconMenu.addItem(aboutCommand);
 			aboutCommand.addEventListener(Event.SELECT, aboutHandler);
+			aboutCommand.enabled = false;
 			
 			iconMenu.addItem(new NativeMenuItem("", true));//Separator
 			
